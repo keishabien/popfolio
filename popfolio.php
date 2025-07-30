@@ -21,3 +21,10 @@ function pop_activate() {
 	flush_rewrite_rules();
 }
 register_activation_hook( __FILE__, 'pop_activate' );
+
+
+function pop_deactivate() {
+	unregister_post_type( 'portfolio' );
+	flush_rewrite_rules();
+}
+register_deactivation_hook( __FILE__, 'pop_deactivate' );
