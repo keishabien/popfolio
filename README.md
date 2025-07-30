@@ -1,2 +1,0 @@
-# popfolio
-A poppy portfolio
